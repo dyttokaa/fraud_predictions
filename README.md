@@ -1,14 +1,14 @@
 # Online Fraud Predictions
 
-##Fraud
+## Fraud
 Fraud is a billion-dollar business and expands rapidly year by year. Thousands of people fall victim to it. Fraud always includes a false statement, misinterpretation or deceitful conduct.  Common varieties of fraud offenses include identity theft, insurance fraud, credit/debit card fraud and mail fraud. The PwC global economic crime survey of 2018 found that about half of the 7,200 surveyed enterprises had already experienced fraud of some kind. This is an increase compared to the PwC survey conducted in 2016, in which slightly more than a third of organizations surveyed had experienced economic crime. 
 
 In this study, machine learning models are benchmarked on a challenging large-scale dataset of online transactions. The machine learning models chosen for this study are from the SAP Predictive Analytics business intelligence software, the SciKit-Learn open source libraries and the Microsoft LightGBM framework. A dataset from real online purchases including fraudulent transactions is used to train all Machine Learning algorithms.  
 
-##Objective 
+## Objective 
 The study refers to a binary classification problem, namely the target variable is a binary attribute characterizing an online transaction as fraudulent or non-fraudulent. Before proceeding with machine learning for training and evaluation, data are preprocessed and analyzed. Preprocessing is necessary to address typical problems with raw input data, such as rejecting empty data rows, fixing missing values, one-hot encoding, anomaly detection and feature scaling and normalization. The clean data are then piped to machine learning algorithms for training and evaluation. The results are interpreted through the Area Under the Receiver Operating Characteristic curve, which is constructed using the true positive (TP) rate as a function of the false positive (FP) rate for varying thresholds of the classifying algorithm. This metric is finally used to compare the performance of the algorithms involved in this study. 
 
-##Data 
+## Data 
 The dataset is provided by Vesta Corporation and describe real-world, anonymized e-commerce transactions. Each of the 590,540 data entries contain a wide range of features from device type to product features, offering thus the opportunity to create new features and improve training results. More specifically, each of the transactions is characterized by 200 features including information about the transaction and the customer. The data columns are subdivided into 35 categorical and 165 numeric. Additionally, the data deliver temporal information about the transaction in the format of time difference from a specific datetime reference. 
 
 The fraudulent rate in the given dataset is measured to be 3.53%, indicating that the classification problem is highly imbalanced. Emphasis is, therefore, placed on avoiding a trained model that assumes rather detects actual signatures of fraud.   
