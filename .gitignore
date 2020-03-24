@@ -1,0 +1,11 @@
+*~
+*.zip
+*.pyc
+*.txt
+*.log
+*.
+*.csv
+*.png
+data/
+
+__pycache__/
